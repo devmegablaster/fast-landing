@@ -10,10 +10,10 @@ const FeatureRender = ({
   return (
     <div className="flex flex-col space-y-4">
       <div className="border-4 w-1/3 border-fastblue" />
-      <h1 className="text-black text-xl font-inter font-bold md:max-w-xs max-w-sm">
+      <h1 className="text-black lg:text-2xl 2xl:text-3xl text-xl font-inter font-bold md:max-w-xs 2xl:max-w-[25rem] max-w-sm">
         {heading}
       </h1>
-      <p className="text-black font-inter font-light text-sm md:max-w-[15rem] max-w-[18rem]">
+      <p className="text-black font-inter font-light lg:text-base 2xl:text-lg text-sm md:max-w-[16rem] 2xl:max-w-[20rem] max-w-[18rem]">
         {body}
       </p>
     </div>

@@ -40,6 +40,7 @@ function index() {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
+        className="md:hidden flex"
       />
     </div>
   );
