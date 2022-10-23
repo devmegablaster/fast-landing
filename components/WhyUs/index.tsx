@@ -23,7 +23,7 @@ const FeatureRender = ({
 function index() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const setPlayBack = () => {
-    videoRef.current.playbackRate = 0.5;
+    // videoRef.current.playbackRate = 0.5;
     videoRef.current?.play();
   };
   return (
