@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: "#111010",
         secondary: "#222222",
-        danger: "#222222",
+        fastblue: "#00ADEF",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

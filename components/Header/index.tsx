@@ -1,8 +1,10 @@
+import { Burger } from "@mantine/core";
 import Image from "next/image";
 import React from "react";
 import RouteBtn from "./RouteBtn";
 
 function index() {
+  const [isOpen, setIsOpen] = React.useState(false);
   const routesArr = [
     {
       text: "Home",
@@ -23,9 +25,9 @@ function index() {
   ];
 
   return (
-    <div className="flex absolute top-0 left-0 right-0 shadow-lg bg-secondary border-b border-white items-center justify-between w-full p-6">
+    <div className="shadow-lg bg-secondary border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2">
       <img className="w-28" src={"/fast.svg"} />
-      <div className="flex items-center space-x-12 text-white">
+      <div className="hidden md:flex items-center space-x-12 text-white">
         {
           // * Map over the routes array and create a button for each route
           routesArr.map((route) => {
@@ -33,6 +35,12 @@ function index() {
           })
         }
       </div>
+      <Burger
+        opened={isOpen}
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      />
     </div>
   );
 }
