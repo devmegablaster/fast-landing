@@ -5,7 +5,7 @@ function ContactSection() {
   return (
     <div className="w-screen pt-6 pb-20 bg-white z-10">
       <div className="w-11/12 mx-auto bg-white z-40 flex flex-col space-y-6">
-        <img src="fast.svg" className="w-40" alt="" />
+        <img src="/fast.svg" className="w-40" alt="" />
         <div className="flex md:flex-row flex-col md:space-x-2 space-y-6 md:space-y-0 justify-between">
           <p className="font-inter text-black max-w-lg">
             Our organization, comprising of employees having a combined

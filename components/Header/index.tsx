@@ -13,15 +13,15 @@ function index() {
     },
     {
       text: "About Us",
-      route: "about",
+      route: "/about",
     },
     {
       text: "Services",
-      route: "services",
+      route: "/services",
     },
     {
       text: "Contact",
-      route: "contact",
+      route: "/contact",
     },
   ];
 

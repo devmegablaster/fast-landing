@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 
 const FeatureRender = ({
   heading,
@@ -8,7 +9,13 @@ const FeatureRender = ({
   body: string;
 }) => {
   return (
-    <div className="flex flex-col space-y-4">
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.3 }}
+      className="flex flex-col space-y-4"
+    >
       <div className="border-4 w-1/3 border-fastblue" />
       <h1 className="text-black lg:text-2xl 2xl:text-3xl text-xl font-inter font-bold md:max-w-xs 2xl:max-w-[25rem] max-w-sm">
         {heading}
@@ -16,7 +23,7 @@ const FeatureRender = ({
       <p className="text-black font-inter font-light lg:text-base 2xl:text-lg text-sm md:max-w-[16rem] 2xl:max-w-[20rem] max-w-[18rem]">
         {body}
       </p>
-    </div>
+    </motion.div>
   );
 };
 
@@ -27,25 +34,35 @@ function index() {
     videoRef.current?.play();
   };
   return (
-    <div className="py-16 relative px-12 flex flex-col space-y-16 bg-white w-screen">
+    <div className="md:py-16 py-8 relative px-12 flex flex-col space-y-16 bg-white w-screen">
       <img
         src="whybg.svg"
-        className="absolute top-0 lg:flex hidden right-0 z-0"
+        className="absolute top-0 w-1/2 md:w-1/4 right-0 z-0"
         alt=""
       />
-      <h1 className="font-inter text-black tracking-wider 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl">
+      <motion.h1
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, bounce: 0.4, type: "spring", delay: 0.2 }}
+        className="font-inter z-20 text-black text-center md:text-left md:tracking-wider 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl"
+      >
         WHY <b>FAST OPERATIONS & MAINTENANCE SERVICES EST</b> ?
-      </h1>
-      <video
+      </motion.h1>
+      <motion.video
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.4 }}
         ref={videoRef}
         src="vid.mp4"
         onCanPlay={setPlayBack}
         autoPlay={true}
         loop={true}
         className="rounded-xl z-10 md:w-11/12 mx-auto"
-      ></video>
+      ></motion.video>
       <div className="flex flex-col w-full md:w-11/12 mx-auto space-y-12">
-        <div className="flex w-full flex-col md:flex-row space-y-10 md:space-y-0 mx-auto items-center justify-between">
+        <motion.div className="flex w-full flex-col md:flex-row space-y-10 md:space-y-0 mx-auto items-start justify-between">
           <FeatureRender
             body="To supply clients with services of the highest calibre while upholding the highest ethical and professional standards possible. To be the greatest and most reputable industrial service provider.n"
             heading="Vision"
@@ -58,10 +75,16 @@ function index() {
             body="We aspire to create the new chain of Fast team by upholding fundamental human values, respecting nature, and engaging in various activities that assist the weak and disadvantaged."
             heading="Values"
           />
-        </div>
-        <button className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold">
+        </motion.div>
+        <motion.button
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, bounce: 0.4, type: "spring" }}
+          className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold"
+        >
           Know More
-        </button>
+        </motion.button>
       </div>
     </div>
   );
