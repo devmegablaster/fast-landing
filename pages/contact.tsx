@@ -17,7 +17,7 @@ function contact() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: "spring", bounce: 0.4, delay: 0.1 }}
-          src="contact.svg"
+          src="contact.png"
           className="lg:absolute lg:w-1/3 xl:w-1/2 h-full right-10 top-10"
           alt=""
         />
