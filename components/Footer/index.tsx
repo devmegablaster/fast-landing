@@ -1,6 +1,7 @@
 import React from "react";
 import ContactSection from "./ContactSection";
 import { motion } from "framer-motion";
+import Router from "next/router";
 
 function index() {
   return (
@@ -41,6 +42,9 @@ function index() {
           viewport={{ once: true }}
           transition={{ delay: 0.6, bounce: 0.4, type: "spring" }}
           className="bg-black text-white font-inter md:text-xl px-10 py-4 mx-auto md:mx-0 z-20 rounded-full w-fit"
+          onClick={() => {
+            Router.push("/contact");
+          }}
         >
           Let's Talk
         </motion.button>

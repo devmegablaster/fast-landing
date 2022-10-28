@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import Router from "next/router";
 
 const FeatureRender = ({
   heading,
@@ -82,6 +83,9 @@ function index() {
           viewport={{ once: true }}
           transition={{ delay: 0.5, bounce: 0.4, type: "spring" }}
           className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold"
+          onClick={() => {
+            Router.push("/services");
+          }}
         >
           Know More
         </motion.button>
