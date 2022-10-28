@@ -33,8 +33,8 @@ function index() {
         className="absolute top-0 lg:flex hidden right-0 z-0"
         alt=""
       />
-      <h1 className="font-inter text-black tracking-wider font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl">
-        Why You Should Use Our Service ?
+      <h1 className="font-inter text-black tracking-wider 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl">
+        WHY <b>FAST OPERATIONS & MAINTENANCE SERVICES EST</b> ?
       </h1>
       <video
         ref={videoRef}
@@ -47,16 +47,16 @@ function index() {
       <div className="flex flex-col w-full md:w-11/12 mx-auto space-y-12">
         <div className="flex w-full flex-col md:flex-row space-y-10 md:space-y-0 mx-auto items-center justify-between">
           <FeatureRender
-            body="We're here to finish your project. just give us some brief about your design and stuff, and we'll make it happen"
-            heading="Dedicated To Finish Your Amazing Project"
+            body="To supply clients with services of the highest calibre while upholding the highest ethical and professional standards possible. To be the greatest and most reputable industrial service provider.n"
+            heading="Vision"
           />
           <FeatureRender
-            body="We're here to finish your project. just give us some brief about your design and stuff, and we'll make it happen"
-            heading="Dedicated To Finish Your Amazing Project"
+            body="to strive for excellence in all areas of operation by enhancing quality standards and practises and training competitive employees who can provide clients with services of the highest calibre."
+            heading="Mission"
           />
           <FeatureRender
-            body="We're here to finish your project. just give us some brief about your design and stuff, and we'll make it happen"
-            heading="Dedicated To Finish Your Amazing Project"
+            body="We aspire to create the new chain of Fast team by upholding fundamental human values, respecting nature, and engaging in various activities that assist the weak and disadvantaged."
+            heading="Values"
           />
         </div>
         <button className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold">

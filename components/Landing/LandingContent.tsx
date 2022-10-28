@@ -10,10 +10,10 @@ function LandingContent() {
         Vision and Extensive Solutions.
       </h1>
       <p className="font-inter 2xl:text-xl md:text-lg text-sm tracking-more max-w-6xl font-light">
-        Our organization, comprising of employees having a combined experience
-        of 21 years in the industry and market, specializes in supply and
-        services of all kinds of Mechanical, Electrical, Civil and Industrial
-        applications.
+        FAST Operations and Maintenance, a Company incorporated in the Kingdom
+        of Saudi Arabia. With a combination of experience, business acumen and
+        technical excellence, we are a company that is not only providing an
+        innovative service but also investing in Saudi Arabia's future
       </p>
       <div className="flex space-y-6 flex-col font-inter">
         <h1 className="text-7xl">21+</h1>
