@@ -1,5 +1,6 @@
 import { Burger } from "@mantine/core";
 import Image from "next/image";
+import Router from "next/router";
 import React from "react";
 import RouteBtn from "./RouteBtn";
 
@@ -12,26 +13,34 @@ function index() {
     },
     {
       text: "About Us",
-      route: "/about",
+      route: "about",
     },
     {
       text: "Services",
-      route: "/services",
+      route: "services",
     },
     {
       text: "Contact",
-      route: "/contact",
+      route: "contact",
     },
   ];
 
   return (
     <div className="shadow-lg z-50 bg-secondary border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2">
-      <img className="w-28" src={"/fast.svg"} />
+      <img
+        onClick={() => {
+          Router.push("/");
+        }}
+        className="w-28 cursor-pointer"
+        src={"/fast.svg"}
+      />
       <div className="hidden md:flex items-center space-x-12 text-white">
         {
           // * Map over the routes array and create a button for each route
-          routesArr.map((route) => {
-            return <RouteBtn route={route.route} text={route.text} />;
+          routesArr.map((route, index) => {
+            return (
+              <RouteBtn key={index} route={route.route} text={route.text} />
+            );
           })
         }
       </div>

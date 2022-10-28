@@ -11,9 +11,6 @@ export default class _Document extends Document {
     return (
       <Html>
         <Head />
-        <div className="hidden md:flex absolute left-0 right-0 top-0">
-          <Header />
-        </div>
         <body>
           <Main />
           <NextScript />
