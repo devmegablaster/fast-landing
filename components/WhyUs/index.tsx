@@ -23,21 +23,26 @@ const FeatureRender = ({
 function index() {
   const videoRef = React.useRef<HTMLVideoElement>(null);
   const setPlayBack = () => {
-    // videoRef.current.playbackRate = 0.5;
+    //// videoRef.current.playbackRate = 0.5;
     videoRef.current?.play();
   };
   return (
-    <div className="py-16 px-12 flex flex-col space-y-16 bg-white w-screen">
+    <div className="py-16 relative px-12 flex flex-col space-y-16 bg-white w-screen">
+      <img
+        src="whybg.svg"
+        className="absolute top-0 lg:flex hidden right-0 z-0"
+        alt=""
+      />
       <h1 className="font-inter text-black tracking-wider font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl">
         Why You Should Use Our Service ?
       </h1>
       <video
         ref={videoRef}
         src="vid.mp4"
-        onPlay={setPlayBack}
+        onCanPlay={setPlayBack}
+        autoPlay={true}
         loop={true}
-        autoPlay
-        className="rounded-xl md:w-11/12 mx-auto"
+        className="rounded-xl z-10 md:w-11/12 mx-auto"
       ></video>
       <div className="flex flex-col w-full md:w-11/12 mx-auto space-y-12">
         <div className="flex w-full flex-col md:flex-row space-y-10 md:space-y-0 mx-auto items-center justify-between">

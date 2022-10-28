@@ -25,7 +25,7 @@ function index() {
   ];
 
   return (
-    <div className="shadow-lg bg-secondary border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2">
+    <div className="shadow-lg z-50 bg-secondary border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2">
       <img className="w-28" src={"/fast.svg"} />
       <div className="hidden md:flex items-center space-x-12 text-white">
         {
