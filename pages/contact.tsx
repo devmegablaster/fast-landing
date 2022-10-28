@@ -2,26 +2,9 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useMediaQuery } from "@mantine/hooks";
 
 function contact() {
-  function useMediaQuery(query: string) {
-    const [matches, setMatches] = useState(false);
-
-    useEffect(() => {
-      const media = window.matchMedia(query);
-      if (media.matches !== matches) {
-        setMatches(media.matches);
-      }
-      const listener = () => {
-        setMatches(media.matches);
-      };
-      media.addListener(listener);
-      return () => media.removeListener(listener);
-    }, [matches, query]);
-
-    return matches;
-  }
-
   const isSmall = useMediaQuery("(max-width: 500px)");
   return (
     <div className="w-screen h-screen bg-white scrollbar-hide overflow-y-auto overflow-x-hidden">

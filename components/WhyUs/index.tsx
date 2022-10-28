@@ -1,20 +1,23 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Router from "next/router";
+import { useMediaQuery } from "@mantine/hooks";
 
 const FeatureRender = ({
   heading,
   body,
+  delay,
 }: {
   heading: string;
   body: string;
+  delay: number;
 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: 0.3 }}
+      transition={{ delay: delay }}
       className="flex flex-col space-y-4"
     >
       <div className="border-4 w-1/3 border-fastblue" />
@@ -34,6 +37,7 @@ function index() {
     //// videoRef.current.playbackRate = 0.5;
     videoRef.current?.play();
   };
+  const isSmall = useMediaQuery("(max-width: 500px)");
   return (
     <div className="md:py-16 py-8 relative px-12 flex flex-col space-y-16 bg-white w-screen">
       <img
@@ -67,21 +71,28 @@ function index() {
           <FeatureRender
             body="To supply clients with services of the highest calibre while upholding the highest ethical and professional standards possible. To be the greatest and most reputable industrial service provider.n"
             heading="Vision"
+            delay={0.3}
           />
           <FeatureRender
             body="to strive for excellence in all areas of operation by enhancing quality standards and practises and training competitive employees who can provide clients with services of the highest calibre."
             heading="Mission"
+            delay={isSmall ? 0.3 : 0.6}
           />
           <FeatureRender
             body="We aspire to create the new chain of Fast team by upholding fundamental human values, respecting nature, and engaging in various activities that assist the weak and disadvantaged."
             heading="Values"
+            delay={isSmall ? 0.3 : 0.9}
           />
         </motion.div>
         <motion.button
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, bounce: 0.4, type: "spring" }}
+          transition={{
+            delay: isSmall ? 0.3 : 1.2,
+            bounce: 0.4,
+            type: "spring",
+          }}
           className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold"
           onClick={() => {
             Router.push("/services");

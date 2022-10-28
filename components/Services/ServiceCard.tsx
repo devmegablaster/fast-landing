@@ -18,9 +18,10 @@ function ServiceCard({
         router.push(`/services/${index}`);
       }}
       initial={{ scale: 0 }}
-      whileInView={{ scale: 1, transition: { delay: 0, duration: 0.1 } }}
-      whileHover={{ scale: 1.07, transition: { duration: 0.1, delay: 0 } }}
-      transition={{ delay: delay, bounce: 0.5 }}
+      whileInView={{
+        scale: 1,
+        transition: { delay: delay, bounce: 0.5 },
+      }}
       viewport={{ once: true }}
       className="flex cursor-pointer flex-col w-full space-y-2 p-4 hover:scale-105 duration-150"
     >
