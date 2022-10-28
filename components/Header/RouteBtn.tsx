@@ -7,7 +7,6 @@ function RouteBtn({ text, route }: { text: string; route: string }) {
     <button
       onClick={() => {
         Router.push(route);
-        console.log("clicked");
       }}
       className="text-white z-50 xl:text-lg text-base font-light"
     >

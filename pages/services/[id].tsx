@@ -67,7 +67,7 @@ function id() {
             <motion.img
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.2 }}
               viewport={{ once: true }}
               src={`/services/${id}.png`}
               className="md:absolute md:right-0 md:w-3/12 md:h-full h-40 md:object-cover"
@@ -81,8 +81,8 @@ function id() {
                 transition={{ delay: (index / 2) * 0.1 }}
                 className="flex space-x-2 items-center"
               >
-                <p className="text-black">{"⚫️"}</p>
-                <p className="text-black text-lg font-inter">{item}</p>
+                <p className="text-black md:text-lg">{"‣"}</p>
+                <p className="text-black md:text-lg font-inter">{item}</p>
               </motion.div>
             ))}
           </div>

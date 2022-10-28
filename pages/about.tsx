@@ -50,11 +50,54 @@ function about() {
           transition={{ delay: 0.4 }}
           className="font-inter text-black md:text-lg"
         >
+          <b>FAST Operations and Maintenance</b>, a Company incorporated in the{" "}
+          <b>Kingdom of Saudi Arabia</b>. With a combination of experience,
+          business acumen and technical excellence, we are a company that is not
+          only providing an innovative service but also investing in Saudi
+          Arabia's future.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="font-inter text-black md:text-lg"
+        >
+          <b>FAST O&M was established in October 2017</b> by a strong
+          engineering core team cutting across several facets of the industry
+          having decades of experience in top level product engineering,
+          consulting and providing high quality products and services to the
+          Oil, Gas, Petrochemical, Power and Process industry.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="font-inter text-black md:text-lg"
+        >
           Everybody would agree that setting up a company is not the most
           challenging part in business. The greatest challenge is keeping your
           clients by meeting their standards and expectations and not to
           mention; quality and on-time service. That is what is{" "}
           <b>FAST OPERATIONS & MAINTENANCE SERVICES EST</b> all about.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="font-inter text-black md:text-lg"
+        >
+          FAST O&M's management takes full responsibility to ensure the full
+          satisfaction of its customer's concerning their requirement,
+          specifications and agreed conditions. To meet its challenges, it
+          maintains a high level of technical capability through its
+          professional, experienced, and adequately trained employees supported
+          using latest equipment, modern techniques & technology as well as
+          innovative ideas. It also follows all relevant National and
+          International Standards as well as applicable regulatory and legal
+          requirements.
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
