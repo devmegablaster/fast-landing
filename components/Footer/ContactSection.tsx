@@ -1,3 +1,4 @@
+import Router from "next/router";
 import React from "react";
 
 function ContactSection() {
@@ -27,15 +28,37 @@ function ContactSection() {
             </h1>
             <p className="font-inter text-black max-w-sm">+966 509534288</p>
           </div>
-          <div className="flex flex-col justify-between">
-            <h1 className="text-black font-inter font-bold text-base">Home</h1>
-            <h1 className="text-black font-inter font-bold text-base">
+          <div className="flex-col md:flex hidden justify-between">
+            <h1
+              onClick={() => {
+                Router.push("/");
+              }}
+              className="text-black font-inter font-bold text-base"
+            >
+              Home
+            </h1>
+            <h1
+              onClick={() => {
+                Router.push("/about");
+              }}
+              className="text-black font-inter font-bold text-base"
+            >
               About Us
             </h1>
-            <h1 className="text-black font-inter font-bold text-base">
+            <h1
+              onClick={() => {
+                Router.push("/services");
+              }}
+              className="text-black font-inter font-bold text-base"
+            >
               Services
             </h1>
-            <h1 className="text-black font-inter font-bold text-base">
+            <h1
+              onClick={() => {
+                Router.push("/contact");
+              }}
+              className="text-black font-inter font-bold text-base"
+            >
               Contact Us
             </h1>
           </div>
