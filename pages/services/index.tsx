@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Services from "../../components/Services";
+import { useMediaQuery } from "@mantine/hooks";
 
 function index() {
+  const isSmall = useMediaQuery("(max-width: 500px)");
   return (
     <div className="w-screen h-screen bg-white scrollbar-hide overflow-y-auto overflow-x-hidden">
       <div className="absolute top-0 z-50 left-0 right-0">
@@ -45,7 +47,7 @@ function index() {
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: isSmall ? 0.8 : 0.2 }}
           className="md:text-4xl xl:text-5xl text-2xl text-black font-inter font-normal"
         >
           Our Services
@@ -54,7 +56,7 @@ function index() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: isSmall ? 1 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
           FAST Operations & Maintenance Services Est. offers{" "}
@@ -72,13 +74,11 @@ function index() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="font-inter text-center max-w-4xl mx-auto text-black md:text-lg"
+          className="font-inter text-center max-w-4xl text-sm mx-auto text-gray-500 font-semibold md:text-lg"
         >
-          The vision of FAST O&M is to help all our workers realize their
-          dreams, provide clients with high-quality services that surpass their
-          expectations, and consequently contribute to a better society for our
-          clients and other stakeholders as well as the public. We will continue
-          our drive to realize this vision.
+          To supply clients with services of the highest calibre while upholding
+          the highest ethical and professional standards possible. To be the
+          greatest and most reputable industrial service provider
         </motion.p>
       </div>
       <Footer />

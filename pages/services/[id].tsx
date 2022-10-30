@@ -4,11 +4,13 @@ import data from "../../components/Services/data.json";
 import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { useMediaQuery } from "@mantine/hooks";
 
 function id() {
   const router = useRouter();
   const { id } = router.query;
   const obj = data[Number(id)];
+  const isSmall = useMediaQuery("(max-width: 500px)");
   if (obj !== undefined) {
     return (
       <div className="w-screen bg-white h-screen scrollbar-hide overflow-y-auto overflow-x-hidden">
@@ -50,7 +52,7 @@ function id() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: isSmall ? 0.8 : 0.3 }}
             className="font-inter text-black md:text-lg"
           >
             FAST O&M's projects range from equipment supply to installation,
@@ -98,13 +100,11 @@ function id() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="font-inter text-center max-w-4xl mx-auto text-black md:text-lg"
+            className="font-inter text-center max-w-6xl text-sm md:max-w-4xl mx-auto text-gray-500 font-semibold md:text-lg"
           >
-            The vision of FAST O&M is to help all our workers realize their
-            dreams, provide clients with high-quality services that surpass
-            their expectations, and consequently contribute to a better society
-            for our clients and other stakeholders as well as the public. We
-            will continue our drive to realize this vision.
+            To supply clients with services of the highest calibre while
+            upholding the highest ethical and professional standards possible.
+            To be the greatest and most reputable industrial service provider
           </motion.p>
         </div>
         <Footer />

@@ -34,7 +34,7 @@ function Safety() {
               transition={{
                 delay: isSmall ? 0.3 : 0.7,
               }}
-              className="w-full md:text-2xl tracking-wider text-black md:pr-10"
+              className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
               <b>Fast O&M</b> values the well-being of all those engaged in our
               projects, including our own staff. The prevention of{" "}
@@ -50,7 +50,7 @@ function Safety() {
               transition={{
                 delay: isSmall ? 0.3 : 0.9,
               }}
-              className="w-full md:text-2xl tracking-wider text-black md:pr-10"
+              className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
               Our firm was founded on the principle that the welfare of its
               employees and its customers are inextricably linked.

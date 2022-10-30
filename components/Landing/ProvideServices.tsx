@@ -47,7 +47,7 @@ function ProvideServices() {
               transition={{
                 delay: isSmall ? 0.3 : 0.9,
               }}
-              className="w-full md:text-2xl tracking-wider text-black md:pr-10"
+              className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
               <b>Fast O&M</b> goes above and beyond to provide a wonderful
               experience. Perfectly crafted to meet your industrial needs, with

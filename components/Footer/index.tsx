@@ -3,16 +3,18 @@ import ContactSection from "./ContactSection";
 import { motion } from "framer-motion";
 import Router from "next/router";
 
-function index() {
+function index({ removeBanner }: { removeBanner?: boolean }) {
   return (
-    <motion.div
-      initial={{ backgroundColor: "#ffffff" }}
-      whileInView={{ backgroundColor: "#00ADEF" }}
-      transition={{ delay: 0.2 }}
-      viewport={{ once: true }}
-      className="w-screen flex flex-col bg-fastblue"
-    >
-      <div className="md:w-11/12 w-full relative mx-auto px-10 md:pt-12 pt-8 pb-12 md:pb-28 flex flex-col space-y-5 md:space-y-10 xl:space-y-12 h-full">
+    <motion.div className="w-screen flex flex-col bg-white">
+      <motion.div
+        initial={{ backgroundColor: "#ffffff" }}
+        whileInView={{ backgroundColor: "#00ADEF" }}
+        transition={{ delay: removeBanner ? 4 : 0.2 }}
+        viewport={{ once: true }}
+        className={`md:w-screen w-screen relative mx-auto px-10 md:pt-12 pt-8 pb-12 md:pb-28 flex flex-col space-y-5 md:space-y-10 xl:space-y-12 h-full ${
+          removeBanner ? "hidden" : ""
+        }`}
+      >
         <img
           src="/footerbg.svg"
           className="absolute right-0 top-0 z-0 bottom-0 h-full"
@@ -48,7 +50,7 @@ function index() {
         >
           Let's Talk
         </motion.button>
-      </div>
+      </motion.div>
       <div>
         <ContactSection />
       </div>

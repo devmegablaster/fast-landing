@@ -1,8 +1,9 @@
 import { Burger, Drawer } from "@mantine/core";
 import Image from "next/image";
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import React from "react";
 import RouteBtn from "./RouteBtn";
+import { motion } from "framer-motion";
 
 function index() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,14 +25,23 @@ function index() {
       route: "/contact",
     },
   ];
+  const router = useRouter();
+  const homepage = router?.pathname === "/";
 
   return (
-    <div className="shadow-lg z-50 bg-secondary border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2">
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className={`shadow-xl z-50 ${
+        homepage ? "bg-black" : "bg-white"
+      } border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2`}
+    >
       <img
         onClick={() => {
           Router.push("/");
         }}
-        className="w-28 cursor-pointer"
+        className="md:w-36 w-32 cursor-pointer"
         src={"/fast.svg"}
       />
       <div className="hidden md:flex items-center space-x-12 text-white">
@@ -39,7 +49,12 @@ function index() {
           // * Map over the routes array and create a button for each route
           routesArr.map((route, index) => {
             return (
-              <RouteBtn key={index} route={route.route} text={route.text} />
+              <RouteBtn
+                homepage={homepage}
+                key={index}
+                route={route.route}
+                text={route.text}
+              />
             );
           })
         }
@@ -49,6 +64,7 @@ function index() {
         onClick={() => {
           setIsOpen(!isOpen);
         }}
+        color={homepage ? "white" : "black"}
         className="md:hidden h-fit flex"
       />
       <Drawer
@@ -88,7 +104,7 @@ function index() {
           </div>
         </div>
       </Drawer>
-    </div>
+    </motion.div>
   );
 }
 

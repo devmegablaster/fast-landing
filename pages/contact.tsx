@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useMediaQuery } from "@mantine/hooks";
+import { FaPhoneAlt, FaFax } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function contact() {
   const isSmall = useMediaQuery("(max-width: 500px)");
@@ -12,7 +14,7 @@ function contact() {
         <Header />
       </div>
       <div className="xl:h-24 md:h-20 sm:h-16 h-16"></div>
-      <div className="bg-white px-10 relative py-14 space-y-8 flex flex-col w-full h-fit lg:h-full items-start">
+      <div className="bg-white px-10 relative pt-14 md:pb-28 space-y-8 flex flex-col w-full h-fit lg:h-full items-start">
         <motion.img
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -55,13 +57,20 @@ function contact() {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: isSmall ? 0.3 : 1.2 }}
-            className="max-w-lg text-lg text-black underline underline-offset-2"
+            className="max-w-lg text-lg text-black underline underline-offset-4"
           >
-            Office 308, 3rd Floor, Balhamer Business Gate, Ash Shati Ash Sharqi,
-            Dammam 32414. Kingdom of Saudi Arabia. +966 13 831 1137
+            Office 308, 3rd Floor,
+            <br />
+            Balhamer Business Gate,
+            <br />
+            Ash Shati Ash Sharqi,
+            <br />
+            Dammam - 32414,
+            <br />
+            Kingdom of Saudi Arabia
           </motion.p>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-2">
           <motion.h2
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -76,17 +85,28 @@ function contact() {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: isSmall ? 0.3 : 1.6 }}
-            className="max-w-lg text-lg text-black underline underline-offset-2"
+            className="max-w-lg flex space-x-2 items-center text-lg text-black underline underline-offset-4"
           >
-            sales2@fast-arabia.com
+            <MdEmail />
+            <span>sales@fast-arabia.com</span>
           </motion.p>
-        </div>
-        <div className="flex flex-col space-y-4">
-          <motion.h2
+          <motion.p
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: isSmall ? 0.3 : 1.8 }}
+            className="max-w-lg flex space-x-2 items-center text-lg text-black underline underline-offset-4"
+          >
+            <MdEmail />
+            <span>sales2@fast-arabia.com</span>
+          </motion.p>
+        </div>
+        <div className="flex flex-col space-y-2">
+          <motion.h2
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: isSmall ? 0.3 : 2 }}
             className="text-3xl text-black font-bold font-inter"
           >
             Call Us
@@ -95,14 +115,35 @@ function contact() {
             initial={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: isSmall ? 0.3 : 2 }}
-            className="max-w-lg text-lg text-black underline underline-offset-2"
+            transition={{ delay: isSmall ? 0.3 : 2.2 }}
+            className="max-w-lg flex space-x-2 items-center text-lg text-black underline underline-offset-4"
           >
-            +966 509534288
+            <FaFax />
+            <span>+966 13 831 1137</span>
+          </motion.p>
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: isSmall ? 0.3 : 2.4 }}
+            className="max-w-lg flex space-x-2 items-center text-lg text-black underline underline-offset-4"
+          >
+            <FaPhoneAlt />
+            <span>+966 549304048</span>
+          </motion.p>
+          <motion.p
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: isSmall ? 0.3 : 2.6 }}
+            className="max-w-lg flex space-x-2 items-center text-lg text-black underline underline-offset-4"
+          >
+            <FaPhoneAlt />
+            <span>+966 509534288</span>
           </motion.p>
         </div>
       </div>
-      <Footer />
+      <Footer removeBanner />
     </div>
   );
 }
