@@ -1,6 +1,7 @@
 import Router from "next/router";
 import React from "react";
 import { motion } from "framer-motion";
+import { FaFax, FaPhoneAlt } from "react-icons/fa";
 
 function ContactSection() {
   return (
@@ -24,7 +25,7 @@ function ContactSection() {
             <h1 className="text-black font-inter font-bold text-base">
               Headquarters
             </h1>
-            <p className="font-inter text-black max-w-xs">
+            <p className="font-inter pt-2 text-black max-w-xs">
               Office 308, 3rd Floor,
               <br />
               Balhamer Business Gate,
@@ -40,7 +41,18 @@ function ContactSection() {
             <h1 className="text-black font-inter font-bold text-base">
               Contact Info
             </h1>
-            <p className="font-inter text-black max-w-sm">+966 509534288</p>
+            <p className="font-inter pt-2 flex items-center space-x-2 text-black max-w-sm">
+              <FaFax />
+              <span>+966 13 831 1137</span>
+            </p>
+            <p className="font-inter flex items-center space-x-2 text-black max-w-sm">
+              <FaPhoneAlt />
+              <span>+966 549304048</span>
+            </p>
+            <p className="font-inter flex items-center space-x-2 text-black max-w-sm">
+              <FaPhoneAlt />
+              <span>+966 509534288</span>
+            </p>
           </div>
           <div className="flex-col md:flex hidden justify-between">
             <h1

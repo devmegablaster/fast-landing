@@ -21,7 +21,7 @@ function Safety() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="md:text-left text-fastblue xl:text-6xl md:text-5xl text-2xl font-bold font-inter"
+          className="md:text-left text-fastblue xl:text-5xl md:text-4xl text-xl font-bold font-inter"
         >
           Safety of our Workforce
         </motion.h1>
@@ -48,7 +48,7 @@ function Safety() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{
-                delay: isSmall ? 0.3 : 0.9,
+                delay: isSmall ? 0.3 : 0.7,
               }}
               className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
@@ -61,7 +61,7 @@ function Safety() {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{
-              delay: isSmall ? 0.3 : 1.1,
+              delay: isSmall ? 0.3 : 0.7,
               type: "spring",
               bounce: 0.4,
             }}

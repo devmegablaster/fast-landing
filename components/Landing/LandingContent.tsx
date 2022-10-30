@@ -25,7 +25,7 @@ function LandingContent() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.8 }}
-        className="font-inter 2xl:text-xl md:text-lg text-sm text-center mx-auto tracking-more max-w-7xl font-light"
+        className="font-inter 2xl:text-xl md:text-lg text-sm text-center mx-auto tracking-more font-light"
       >
         FAST Operations and Maintenance, a Company incorporated in the Kingdom
         of Saudi Arabia. With a combination of experience, business acumen and
@@ -36,13 +36,13 @@ function LandingContent() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 1 }}
-        className="flex space-y-6 flex-col font-inter"
+        className="flex w-fit mx-auto text-center space-y-6 flex-col font-inter"
       >
         <h1 className="text-7xl">
           <CountUp end={21} duration={1} delay={1} />+
         </h1>
         <h3 className="text-xl font-extralight font-inter tracking-wide">
-          Years Combined experience
+          Years of Combined experience
         </h3>
       </motion.div>
     </div>

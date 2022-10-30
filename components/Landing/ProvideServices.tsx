@@ -21,7 +21,7 @@ function ProvideServices() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="md:text-left md:max-w-5xl text-fastblue xl:text-6xl md:text-5xl text-2xl tracking-wide font-inter"
+          className="md:text-left md:max-w-4xl text-fastblue xl:text-5xl md:text-4xl text-xl font-bold tracking-wide font-inter"
         >
           Fast O&M provides any service you can think of!
         </motion.h1>
@@ -45,7 +45,7 @@ function ProvideServices() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{
-                delay: isSmall ? 0.3 : 0.9,
+                delay: isSmall ? 0.3 : 0.7,
               }}
               className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >

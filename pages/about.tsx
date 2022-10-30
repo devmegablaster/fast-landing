@@ -48,7 +48,7 @@ function about() {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: isSmall ? 0.8 : 0.2 }}
-          className="md:text-4xl xl:text-5xl text-2xl text-black font-inter font-normal"
+          className="md:text-4xl xl:text-5xl text-2xl text-black font-inter font-semibold font-normal"
         >
           About Us
         </motion.h1>
@@ -73,10 +73,9 @@ function about() {
         >
           With decades of expertise in top-level product engineering, advising,
           and supplying high-quality products and services to the Oil, Gas,
-          Petrochemical, Power, and Process sector, <b>FAST O&M</b> was created
-          in
-          <b>October 2017</b> by a strong engineering core team spanning several
-          aspects of the business.
+          Petrochemical, Power, and Process sector, <b>FAST O&M</b> was{" "}
+          <b>Founded in October 2017</b> by a strong engineering core team
+          spanning several aspects of the business.
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
