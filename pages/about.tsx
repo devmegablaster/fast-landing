@@ -47,7 +47,7 @@ function about() {
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: isSmall ? 0.8 : 0.2 }}
+          transition={{ delay: isSmall ? 1 : 0.2 }}
           className="md:text-4xl xl:text-5xl text-2xl text-black font-inter font-semibold"
         >
           About Us
@@ -56,7 +56,7 @@ function about() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: isSmall ? 1 : 0.2 }}
+          transition={{ delay: isSmall ? 1.2 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
           Company, <b>FAST Operations and Maintenance</b>, based in the{" "}
@@ -68,7 +68,7 @@ function about() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: isSmall ? 1.2 : 0.2 }}
+          transition={{ delay: isSmall ? 1.4 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
           With decades of expertise in top-level product engineering, advising,

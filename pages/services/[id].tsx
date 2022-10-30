@@ -52,7 +52,7 @@ function id() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: isSmall ? 0.8 : 0.3 }}
+            transition={{ delay: isSmall ? 1 : 0.3 }}
             className="font-inter text-black md:text-lg"
           >
             FAST O&M's projects range from equipment supply to installation,

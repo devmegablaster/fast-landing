@@ -47,7 +47,7 @@ function index() {
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: isSmall ? 0.8 : 0.2 }}
+          transition={{ delay: isSmall ? 1 : 0.2 }}
           className="md:text-4xl xl:text-5xl text-2xl text-black font-inter font-normal"
         >
           Our Services
@@ -56,7 +56,7 @@ function index() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: isSmall ? 1 : 0.2 }}
+          transition={{ delay: isSmall ? 1.2 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
           FAST Operations & Maintenance Services Est. offers{" "}
