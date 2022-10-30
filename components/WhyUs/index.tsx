@@ -50,7 +50,7 @@ function index() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, bounce: 0.4, type: "spring", delay: 0.2 }}
-        className="font-inter z-20 text-black text-center md:text-left md:tracking-wider 2xl:text-5xl xl:text-4xl lg:text-3xl s:text-2xl text-xl"
+        className="font-inter z-20 text-black text-center md:pb-6 md:tracking-wider 2xl:text-5xl xl:text-5xl lg:text-4xl sm:text-3xl text-xl"
       >
         WHY <b>FAST OPERATIONS & MAINTENANCE</b> ?
       </motion.h1>

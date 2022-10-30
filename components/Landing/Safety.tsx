@@ -8,20 +8,20 @@ function Safety() {
     <div className="w-screen md:pt-14 md:pb-14 pt-8 pb-0 bg-white">
       <div className="w-11/12 mx-auto">
         <motion.p
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="md:text-right text-black font-inter xl:text-2xl md:text-xl mb-2 md:mb-0 text-base"
+          className="md:text-left text-black font-inter xl:text-2xl md:text-xl mb-2 md:mb-0 text-base"
         >
           Ensuring The Safe Work Environment at Fast O&M
         </motion.p>
         <motion.h1
-          initial={{ x: -100, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="md:text-right text-fastblue xl:text-6xl md:text-5xl text-2xl tracking-wide font-inter"
+          className="md:text-left text-fastblue xl:text-6xl md:text-5xl text-2xl tracking-wide font-inter"
         >
           Safety of our workforce
         </motion.h1>

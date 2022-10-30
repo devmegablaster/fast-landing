@@ -9,17 +9,17 @@ function LandingContent() {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, bounce: 0.3, type: "spring", delay: 0.2 }}
-        className="2xl:text-7xl lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
+        className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
       >
-        Giving You One-Step Solution With Our
+        Giving You One-Step Solution With Our Vision and
       </motion.h1>
       <motion.h1
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, bounce: 0.3, type: "spring", delay: 0.5 }}
-        className="2xl:text-7xl lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
+        className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
       >
-        Vision and Extensive Solutions.
+        Extensive Solutions.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ function LandingContent() {
           <CountUp end={21} duration={1} delay={1} />+
         </h1>
         <h3 className="text-xl font-extralight font-inter tracking-wide">
-          Years in Industry
+          Years Combined experience
         </h3>
       </motion.div>
     </div>
