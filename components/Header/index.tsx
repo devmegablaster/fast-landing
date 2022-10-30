@@ -60,19 +60,18 @@ function index() {
           setIsOpen(false);
         }}
       >
-        <div className="flex relative h-full w-full flex-col items-center justify-center">
-          <div className="absolute right-0 top-0">
+        <div className="flex relative h-full w-full flex-col overflow-y-scroll scrollbar-hide items-center justify-center">
+          <div className="absolute right-0 top-0 left-0 flex justify-between items-center">
+            <img src="fast.svg" className="w-24" alt="" />
             <Burger
               opened={isOpen}
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="md:hidden h-fit flex"
+              className="md:hidden h-full flex"
             />
           </div>
-          <div className="absolute left-0 top-0">
-            <img src="fast.svg" className="w-24" alt="" />
-          </div>
+
           <div className="flex flex-col h-full space-y-10 pt-20">
             {routesArr.map((route, index) => {
               return (

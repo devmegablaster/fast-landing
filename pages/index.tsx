@@ -5,6 +5,9 @@ import Header from "../components/Header";
 import Landing from "../components/Landing";
 import WhyUs from "../components/WhyUs";
 import Footer from "../components/Footer";
+import LandingServices from "../components/Services/LandingServices";
+import Safety from "../components/Landing/Safety";
+import ProvideServices from "../components/Landing/ProvideServices";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +17,9 @@ const Home: NextPage = () => {
       </div>
       <Landing />
       <WhyUs />
+      <LandingServices />
+      <Safety />
+      <ProvideServices />
       <Footer />
     </div>
   );
