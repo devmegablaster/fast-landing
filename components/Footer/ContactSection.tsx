@@ -15,10 +15,10 @@ function ContactSection() {
         <img src="/fast.svg" className="w-40" alt="" />
         <div className="flex md:flex-row flex-col space-y-6 md:space-y-0 md:space-x-4 justify-between">
           <p className="font-inter text-black max-w-lg">
-            Our organization, comprising of employees having a combined
-            experience of 21 years in the industry and market, specializes in
-            supply and services of all kinds of Mechanical, Electrical, Civil
-            and Industrial applications.
+            Our organization comprises of employees having a combined experience
+            of 21 years in the industry and market, specializes in supply and
+            services of all kinds of Mechanical, Electrical, Civil and
+            Industrial applications.
           </p>
           <div className="flex flex-col space-y-1">
             <h1 className="text-black font-inter font-bold text-base">

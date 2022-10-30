@@ -21,9 +21,9 @@ function Safety() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          className="md:text-left text-fastblue xl:text-6xl md:text-5xl text-2xl tracking-wide font-inter"
+          className="md:text-left text-fastblue xl:text-6xl md:text-5xl text-2xl font-bold font-inter"
         >
-          Safety of our workforce
+          Safety of our Workforce
         </motion.h1>
         <div className="md:pt-14 pt-5 gap-10 grid md:grid-cols-2 grid-cols-1">
           <div className="flex flex-col h-full w-full item justify-center md:space-y-8 space-y-5">
