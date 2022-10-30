@@ -12,6 +12,7 @@ function ServiceCard({
   delay: number;
 }) {
   const router = useRouter();
+  const [hoverTimer, setHoverTimer] = React.useState(delay);
   return (
     <motion.div
       onClick={() => {
@@ -20,7 +21,11 @@ function ServiceCard({
       initial={{ scale: 0 }}
       whileInView={{
         scale: 1,
-        transition: { delay: delay, bounce: 0.5 },
+        transition: { delay: hoverTimer, bounce: 0.5 },
+      }}
+      whileHover={{ scale: 1.05 }}
+      onHoverStart={() => {
+        setHoverTimer(0);
       }}
       viewport={{ once: true }}
       className="flex cursor-pointer flex-col w-full space-y-2 p-4 hover:scale-105 duration-150"

@@ -33,7 +33,7 @@ function index() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className={`shadow-xl z-50 ${
+      className={`shadow-2xl z-50 ${
         homepage ? "bg-black" : "bg-white"
       } border-b border-white items-center justify-between w-full xl:h-24 md:h-20 sm:h-16 h-16 flex md:px-6 px-2`}
     >

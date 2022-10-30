@@ -17,7 +17,7 @@ function id() {
         <div className="absolute top-0 z-50 left-0 right-0">
           <Header />
         </div>
-        <div className="xl:h-screen">
+        <div className="md:pb-14">
           <div className="xl:h-16 md:h-10 h-16"></div>
           <div className="md:w-9/12 mx-auto md:rounded-2xl md:mt-20 relative">
             <motion.video

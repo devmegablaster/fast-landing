@@ -37,7 +37,9 @@ function index() {
     //// videoRef.current.playbackRate = 0.5;
     videoRef.current?.play();
   };
+
   const isSmall = useMediaQuery("(max-width: 500px)");
+  const [hoverTime, setHoverTime] = React.useState(isSmall ? 0.3 : 0.8);
   return (
     <div className="md:py-16 py-8 relative px-12 flex flex-col space-y-16 bg-white w-screen">
       <img
@@ -89,10 +91,12 @@ function index() {
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: isSmall ? 0.3 : 0.8,
+            delay: hoverTime,
             bounce: 0.4,
             type: "spring",
           }}
+          onHoverStart={() => setHoverTime(0)}
+          whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
           className="bg-black px-6 w-fit mx-auto md:mx-0 py-4 rounded-full text-white font-inter font-bold"
           onClick={() => {
             Router.push("/services");
