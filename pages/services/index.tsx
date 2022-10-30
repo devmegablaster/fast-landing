@@ -10,32 +10,34 @@ function index() {
       <div className="absolute top-0 z-50 left-0 right-0">
         <Header />
       </div>
-      <div className="xl:h-16 md:h-10 h-16"></div>
-      <div className="md:w-9/12 mx-auto md:rounded-2xl md:mt-20 relative">
-        <motion.video
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.3, type: "spring", bounce: 0.2 }}
-          className="w-full md:rounded-2xl mx-auto"
-          autoPlay
-          loop
-          src="/vid.mp4"
-        ></motion.video>
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.3, type: "spring", bounce: 0.2 }}
-          className="absolute bg-black md:rounded-2xl top-0 left-0 right-0 bottom-0 opacity-40"
-        ></motion.div>
-        <div className="absolute flex flex-col items-center justify-center top-0 bottom-0 left-0 right-0 text-center">
-          <motion.h1
+      <div className="xl:h-screen">
+        <div className="xl:h-16 md:h-10 h-16"></div>
+        <div className="md:w-9/12 mx-auto md:rounded-2xl md:mt-20 relative">
+          <motion.video
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.6, type: "spring", bounce: 0.2 }}
-            className="text-white xl:text-5xl 2xl:text-6xl md:text-4xl sm:text-2xl text-xl font-inter md:leading-loose w-11/12 my-auto"
-          >
-            Our Core Services
-          </motion.h1>
+            transition={{ delay: 0.3, type: "spring", bounce: 0.2 }}
+            className="w-full md:rounded-2xl mx-auto"
+            autoPlay
+            loop
+            src="/vid.mp4"
+          ></motion.video>
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ delay: 0.3, type: "spring", bounce: 0.2 }}
+            className="absolute bg-black md:rounded-2xl top-0 left-0 right-0 bottom-0 opacity-40"
+          ></motion.div>
+          <div className="absolute flex flex-col items-center justify-center top-0 bottom-0 left-0 right-0 text-center">
+            <motion.h1
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.6, type: "spring", bounce: 0.2 }}
+              className="text-white xl:text-5xl 2xl:text-6xl md:text-4xl sm:text-2xl text-xl font-inter md:leading-loose w-11/12 my-auto"
+            >
+              Our Core Services
+            </motion.h1>
+          </div>
         </div>
       </div>
       <div className="flex flex-col bg-white px-10 py-10 space-y-10">
