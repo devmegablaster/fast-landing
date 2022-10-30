@@ -64,24 +64,24 @@ function index() {
         onCanPlay={setPlayBack}
         autoPlay={true}
         loop={true}
-        className="rounded-xl z-10 md:w-11/12 mx-auto"
+        className="rounded-xl z-10 md:w-9/12 mx-auto"
       ></motion.video>
       <div className="flex flex-col w-full md:w-11/12 mx-auto space-y-12">
         <motion.div className="flex w-full flex-col md:flex-row space-y-10 md:space-y-0 mx-auto items-start justify-between">
           <FeatureRender
             body="To supply clients with services of the highest calibre while upholding the highest ethical and professional standards possible. To be the greatest and most reputable industrial service provider.n"
             heading="Vision"
-            delay={0.3}
+            delay={0.2}
           />
           <FeatureRender
             body="to strive for excellence in all areas of operation by enhancing quality standards and practises and training competitive employees who can provide clients with services of the highest calibre."
             heading="Mission"
-            delay={isSmall ? 0.3 : 0.6}
+            delay={isSmall ? 0.2 : 0.4}
           />
           <FeatureRender
             body="We aspire to create the new chain of Fast team by upholding fundamental human values, respecting nature, and engaging in various activities that assist the weak and disadvantaged."
             heading="Values"
-            delay={isSmall ? 0.3 : 0.9}
+            delay={isSmall ? 0.2 : 0.6}
           />
         </motion.div>
         <motion.button
@@ -89,7 +89,7 @@ function index() {
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
           transition={{
-            delay: isSmall ? 0.3 : 1.2,
+            delay: isSmall ? 0.3 : 0.8,
             bounce: 0.4,
             type: "spring",
           }}
