@@ -23,7 +23,7 @@ function ProvideServices() {
           transition={{ delay: 0.5 }}
           className="md:text-left md:max-w-4xl text-fastblue xl:text-5xl md:text-4xl text-xl font-bold tracking-wide font-inter"
         >
-          Fast O&M provides any service you can think of!
+          FAST O&M provides any service you can think of!
         </motion.h1>
         <div className="md:pt-14 pt-5 gap-10 grid md:grid-cols-2 grid-cols-1">
           <motion.img
@@ -49,7 +49,7 @@ function ProvideServices() {
               }}
               className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
-              <b>Fast O&M</b> goes above and beyond to provide a wonderful
+              <b>FAST O&M</b> goes above and beyond to provide a wonderful
               experience. Perfectly crafted to meet your industrial needs, with
               nearly limitless options for completing your projects. We serve a
               wide range of industries, including <b>petrochemical</b>,{" "}

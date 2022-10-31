@@ -14,7 +14,7 @@ function Safety() {
           transition={{ delay: 0.3 }}
           className="md:text-left text-black font-inter xl:text-2xl md:text-xl mb-2 md:mb-0 text-base"
         >
-          Ensuring The Safe Work Environment at Fast O&M
+          Ensuring The Safe Work Environment at FAST O&M
         </motion.p>
         <motion.h1
           initial={{ x: 100, opacity: 0 }}
@@ -36,8 +36,8 @@ function Safety() {
               }}
               className="w-full md:text-xl tracking-wider text-black md:pr-10"
             >
-              <b>Fast O&M</b> values the well-being of all those engaged in our
-              projects, including our own staff. The prevention of{" "}
+              <b>FAST O&M</b> values the well-being of all those engaged in our
+              projects, including our staff. The prevention of{" "}
               <b>work-related injuries</b> and <b>illnesses</b> for workers is a
               primary focus. Through <b>efficient management, education</b>, and
               <b>training</b>, we aim to{" "}

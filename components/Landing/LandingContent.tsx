@@ -4,23 +4,35 @@ import CountUp from "react-countup";
 
 function LandingContent() {
   return (
-    <div className="flex flex-col 2xl:space-y-12 md:space-y-10 space-y-8  h-full text-white bg-primary 2xl:py-12 2xl:px-10 md:py-10 md:px-8 py-10 px-3">
-      <motion.h1
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, bounce: 0.3, type: "spring", delay: 0.2 }}
-        className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
-      >
-        Giving You One-Step Solution With Our Vision and
-      </motion.h1>
-      <motion.h1
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, bounce: 0.3, type: "spring", delay: 0.5 }}
-        className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
-      >
-        Extensive Solutions.
-      </motion.h1>
+    <div className="flex flex-col 2xl:space-y-16 md:space-y-12 space-y-10  h-full text-white bg-primary 2xl:py-12 2xl:px-10 md:py-10 md:px-8 py-10 px-3">
+      <div className="flex flex-col">
+        <motion.h1
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.5,
+            bounce: 0.3,
+            type: "spring",
+            delay: 0.2,
+          }}
+          className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
+        >
+          Giving You One-Step Solution With Our Vision and
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.5,
+            bounce: 0.3,
+            type: "spring",
+            delay: 0.5,
+          }}
+          className="2xl:text-7xl text-center lg:text-5xl md:text-4xl text-3xl tracking-wide font-normal font-inter"
+        >
+          Extensive Solutions.
+        </motion.h1>
+      </div>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

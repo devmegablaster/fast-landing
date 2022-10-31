@@ -59,17 +59,15 @@ function index() {
           transition={{ delay: isSmall ? 1.2 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
-          FAST Operations & Maintenance Services Est. offers{" "}
-          <b>
-            engineering support and supplementary manpower services to civil,
-            structural, architectural and electro-mechanical projects
-          </b>{" "}
-          all over the Kingdom. FAST Operations & Maintenance Services Est also
-          sells electrical, mechanical and instrumentation materials, tools and
-          equipment .
+          FAST Operations & Maintenance Services . offers engineering support
+          and supplementary manpower services to{" "}
+          <b>mechanical, civil, structural, architectural, and electrical</b>{" "}
+          projects all over the Kingdom. FAST Operations & Maintenance Services
+          also sells electrical, mechanical, and instrumentation materials,
+          tools, and equipment
         </motion.p>
         <Services />
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -79,7 +77,7 @@ function index() {
           To supply clients with services of the highest calibre while upholding
           the highest ethical and professional standards possible. To be the
           greatest and most reputable industrial service provider
-        </motion.p>
+        </motion.p> */}
       </div>
       <Footer />
     </div>

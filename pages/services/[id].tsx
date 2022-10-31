@@ -57,11 +57,11 @@ function id() {
           >
             FAST O&M's projects range from equipment supply to installation,
             including testing and commissioning, our strength lies in our
-            ability to provide one stop solution from supply of material to
-            installation and commissioning and any related engineering services.
-            FAST O&M is continuously adding through its partners unique patented
-            technologies in line with company philosophy, some of the services
-            that FAST O&M currently offers are as given below
+            ability to provide a one-stop solution from the supply of material
+            to installation and commissioning and any related engineering
+            services. FAST O&M is continuously adding through its partner's
+            unique patented technologies in line with company philosophy, some
+            of the services that FAST O&M currently offers are as given below
           </motion.p>
           <motion.h1
             initial={{ x: 100, opacity: 0 }}
@@ -95,7 +95,7 @@ function id() {
               </motion.div>
             ))}
           </div>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -105,7 +105,7 @@ function id() {
             To supply clients with services of the highest calibre while
             upholding the highest ethical and professional standards possible.
             To be the greatest and most reputable industrial service provider
-          </motion.p>
+          </motion.p> */}
         </div>
         <Footer />
       </div>

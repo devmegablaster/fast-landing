@@ -39,8 +39,9 @@ function contact() {
           transition={{ delay: 0.8 }}
           className="max-w-lg text-lg text-black"
         >
-          Fast is here to help you; Our experts are available to answer any
-          questions you might have. We've got the answers.
+          FAST is here to help you <br />
+          Our experts are available to answer any questions you might have.
+          We've got the answers.
         </motion.p>
         <div className="flex flex-col space-y-4">
           <motion.h2
