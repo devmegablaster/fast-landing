@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
@@ -8,6 +9,9 @@ function about() {
   const isSmall = useMediaQuery("(max-width: 500px)");
   return (
     <div className="w-screen h-screen bg-white scrollbar-hide overflow-y-auto overflow-x-hidden">
+      <Head>
+        <title>About Us</title>
+      </Head>
       <div className="absolute top-0 z-50 left-0 right-0">
         <Header />
       </div>

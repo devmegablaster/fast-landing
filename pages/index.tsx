@@ -12,6 +12,9 @@ import ProvideServices from "../components/Landing/ProvideServices";
 const Home: NextPage = () => {
   return (
     <div className="w-screen h-screen overflow-x-hidden overflow-y-scroll scrollbar-hide">
+      <Head>
+        <title>FAST O&M</title>
+      </Head>
       <div className="flex md:hidden">
         <Header />
       </div>

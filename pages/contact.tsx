@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,6 +11,9 @@ function contact() {
   const isSmall = useMediaQuery("(max-width: 500px)");
   return (
     <div className="w-screen h-screen bg-white scrollbar-hide overflow-y-auto overflow-x-hidden">
+      <Head>
+        <title>Contact Us</title>
+      </Head>
       <div className="absolute top-0 z-50 left-0 right-0">
         <Header />
       </div>

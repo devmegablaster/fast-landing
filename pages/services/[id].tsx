@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { useMediaQuery } from "@mantine/hooks";
+import Head from "next/head";
 
 function id() {
   const router = useRouter();
@@ -14,6 +15,9 @@ function id() {
   if (obj !== undefined) {
     return (
       <div className="w-screen bg-white h-screen scrollbar-hide overflow-y-auto overflow-x-hidden">
+        <Head>
+          <title>{obj.title}</title>
+        </Head>
         <div className="absolute top-0 z-50 left-0 right-0">
           <Header />
         </div>
