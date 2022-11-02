@@ -18,7 +18,7 @@ function contact() {
         <Header />
       </div>
       <div className="xl:h-24 md:h-20 sm:h-16 h-16"></div>
-      <div className="bg-white px-10 relative pt-14 md:pb-28 pb-14 space-y-8 flex flex-col w-full h-fit lg:h-full items-start">
+      <div className="bg-white px-10 relative pt-14 md:pb-28 pb-14 space-y-8 flex flex-col w-full h-fit lg:h-fit items-start">
         <motion.img
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
