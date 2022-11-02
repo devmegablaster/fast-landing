@@ -2,6 +2,9 @@ import Router from "next/router";
 import React from "react";
 import data from "./data.json";
 import { motion } from "framer-motion";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { Carousel } from "@mantine/carousel";
+import { MdArrowLeft, MdArrowRight } from "react-icons/md";
 
 function LandingServices() {
   return (
@@ -16,7 +19,23 @@ function LandingServices() {
         >
           Our Core Services
         </motion.h1>
-        <div className="flex w-full scrollbar-hide overflow-x-scroll overflow-y-hidden">
+        {/* <div
+          ref={ref}
+          className="flex w-full scrollbar-hide overflow-x-scroll relative overflow-y-hidden"
+        > */}
+        <Carousel
+          slideSize="100%"
+          slideGap="md"
+          controlSize={40}
+          align="start"
+          slidesToScroll={2}
+          nextControlIcon={
+            <MdArrowRight className="text-white bg-black rounded-full h-10 w-10" />
+          }
+          previousControlIcon={
+            <MdArrowLeft className="text-white bg-black rounded-full h-10 w-10" />
+          }
+        >
           {data.map((item, index) => (
             <motion.div
               initial={{ opacity: 0 }}
@@ -42,7 +61,8 @@ function LandingServices() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </Carousel>
+        {/* </div> */}
       </div>
     </div>
   );
