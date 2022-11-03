@@ -99,7 +99,7 @@
     ]
   },
   {
-    "title": "General Trading - Medical & Scientific Equipment, Spare parts and cables accessories",
+    "title": "General Trading - Medical & Scientific Equipment, Spare parts and cables accessories, Safety Items",
     "provide": [
       "Medical Lamps",
       "Special Fluorescent and BLB Lamps",
@@ -115,19 +115,6 @@
       "Medical Batteries",
       "Medical Oxygen Regulators",
       "Terminal Units of Medical Gas Pipeline System"
-    ]
-  },
-  {
-    "title": "General Trading - Safety Items",
-    "provide": [
-      "Medical Safety Coverall",
-      "Safety Goggles",
-      "Safety Dresses",
-      "FRC Dresses",
-      "Safety Boots",
-      "Spill Kits",
-      "Chemical Kits",
-      "Safety Signages"
     ]
   }
 ]
