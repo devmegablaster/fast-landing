@@ -39,7 +39,7 @@ function Safety() {
               <b>FAST O&M</b> values the well-being of all those engaged in our
               projects, including our staff. The prevention of{" "}
               <b>work-related injuries</b> and <b>illnesses</b> for workers is a
-              primary focus. Through <b>efficient management, education</b>, and
+              primary focus. Through <b>efficient management, education</b>, and{" "}
               <b>training</b>, we aim to{" "}
               <b>create a workplace free of accidents and injuries</b>.
             </motion.p>

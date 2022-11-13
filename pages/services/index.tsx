@@ -64,12 +64,12 @@ function index() {
           transition={{ delay: isSmall ? 1.2 : 0.2 }}
           className="font-inter text-black md:text-lg"
         >
-          FAST Operations & Maintenance Services . offers engineering support
-          and supplementary manpower services to{" "}
+          FAST Operations & Maintenance Services offers engineering support and
+          supplementary manpower services to{" "}
           <b>mechanical, civil, structural, architectural, and electrical</b>{" "}
           projects all over the Kingdom. FAST Operations & Maintenance Services
-          also sells electrical, mechanical, and instrumentation materials,
-          tools, and equipment
+          also sells electrical, mechanical and instrumentation materials, tools
+          and equipment.
         </motion.p>
         <Services />
         {/* <motion.p

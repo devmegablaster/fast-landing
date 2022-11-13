@@ -90,8 +90,8 @@ function about() {
         >
           The management team at <b>FAST O&M</b> is committed to providing
           exceptional service and is responsible for ensuring that all of the
-          company's customers are happy with the services provided. Its
-          technical competency is kept at a high level by its competent,
+          company's customers are happy with the services provided. It's
+          technical competency is kept at a high level by it's competent,
           experienced, and sufficiently qualified staff, which in turn is backed
           by cutting-edge tools, cutting-edge processes and technology, and
           cutting-edge concepts. It also complies with all national and
@@ -119,7 +119,7 @@ function about() {
           fuel, water, electricity, and greenhouse gas emissions across a wide
           variety of product/service offerings. In order to meet the energy
           needs of the next generation now, <b>FAST O&M</b>, in conjunction with
-          its partners, provides clean energy solutions to help businesses
+          it's partners, provides clean energy solutions to help businesses
           control, monitor, and reduce their energy usage. These solutions
           utilise cutting-edge technology to boost operational and financial
           performance.
@@ -132,7 +132,7 @@ function about() {
           className="font-inter text-black md:text-lg"
         >
           Projects undertaken by <b>FAST O&M</b> include the{" "}
-          <b>sourcing of equipment</b>, its <b>installation</b>, and the{" "}
+          <b>sourcing of equipment</b>, it's <b>installation</b>, and the{" "}
           <b>accompanying testing and commissioning</b>. The company's forte is
           that it can offer a{" "}
           <b>
@@ -140,8 +140,9 @@ function about() {
             ending with the commissioning of the completed project and any
             necessary engineering services
           </b>
-          . In keeping with its core values, <b>FAST O&M</b> is always expanding
-          its arsenal of exclusive innovations via strategic alliances.
+          . In keeping with it's core values, <b>FAST O&M</b> is always
+          expanding it's arsenal of exclusive innovations via strategic
+          alliances.
         </motion.p>
       </div>
       <Footer />

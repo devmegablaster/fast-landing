@@ -41,8 +41,8 @@ function LandingContent() {
       >
         FAST Operations and Maintenance, a Company incorporated in the Kingdom
         of Saudi Arabia. With a combination of experience, business acumen and
-        technical excellence, we are a company that is not only providing an
-        innovative service but also investing in Saudi Arabia's future
+        technical excellence, we are a company that is not only providing
+        innovative services but also investing in Saudi Arabia's future
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}

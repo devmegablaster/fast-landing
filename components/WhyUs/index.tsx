@@ -81,7 +81,7 @@ function index() {
             delay={isSmall ? 0.2 : 0.4}
           />
           <FeatureRender
-            body="We aspire to create a new chain of FAST O&M teams by upholding fundamental human values, respecting nature, and engaging in various activities that assist the weak and disadvantaged"
+            body="We aspire to create a new chain of FAST O&M teams by upholding fundamental human values, respecting nature and engaging in various activities that assist the weak and disadvantaged"
             heading="Values"
             delay={isSmall ? 0.2 : 0.6}
           />
