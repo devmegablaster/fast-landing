@@ -2,6 +2,7 @@ import Router from "next/router";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaFax, FaPhoneAlt } from "react-icons/fa";
+import Maps from "./Maps";
 
 function ContactSection() {
   return (
@@ -89,6 +90,7 @@ function ContactSection() {
             </h1>
           </div>
         </div>
+        <Maps />
       </motion.div>
     </motion.div>
   );
